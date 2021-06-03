@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+
+    <div>
+
+        <p>
+            Fork this repo:
+            <ul>
+                <li>owner: {{ repo_owner }}</li>
+                <li>name: {{ repo_name }}</li>
+            </ul>
+            <a href="fork">Fork</a>
+        </p>
+
+        {% if repo_url %}
+            View forked repo: <a href="{{repo_url}}">{{repo_url}}</a>
+        {% endif %}
+    </div>
+
+  </body>
+</html>
